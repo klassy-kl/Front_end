@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+}
+
+.productimg{
+    flex-basis: 47%;
+    background: #241e204c;
+    position: relative;       
+}
+
+.productimg img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+
+}
+
+.productdetails{
+    flex-basis: 53%;
+    background: rgba(255, 255, 255, 0.753);
+    padding-top: 40px;
+    padding-left: 60px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #777;
+    
+}
+
+.productdetails h1{
+    color: #333;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.productdetails h2{
+    color: #555;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.productdetails h3{
+    color:  #00d874;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.productdetails #company{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+form{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sizeselect{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.sizeselect p{
+    width: 148px;
+    font-size: 30px;
+}
+
+.sizeselect span{
+    font-size: 28px;
+}
+
+.sizeselect input:checked+span{
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sizeselect input{
+    display: none;
+}
+
+.sizeselect span{
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.colorselect{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.colorselect p{
+    width: 155px;
+    font-size: 30px;
+}
+
+.colorselect span{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.color1{
+    background: red;
+}
+
+.color2{
+    background: #00d874;
+}
+
+.color3{
+    background: blue;
+}
+
+.color4{
+    background: pink;
+}
+
+.colorselect input{
+    display: none;
+}
+
+.colorselect input:checked+span{
+    transform: scale(0.8);
+    box-shadow: 0 0 0 6px #fff, 0 0 0 8px #000;
+}
+
+.quantityselect{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.quantityselect p{
+    width: 150px;
+    font-size: 30px;
+}
+
+.quantityselect input{
+    background: #eee;
+    border: 0;
+    font-size: 20px;
+    outline: 0;
+    padding: 3px 3px 3px 25px;
+    border-radius: 12px;
+    width: 100px;
+    height: 70px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button{
+    margin-top: 70px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(84, 63, 240, 0.141);
+    background: #553ff0;
+    color: #fff;
+    font-size: 30px;
+    padding: 22px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    width: 90%;
+}
+
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    margin: 16px;
+    cursor: pointer;
+}
+
+.active{
+    background: #076bbe;
+}
